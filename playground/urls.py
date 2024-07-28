@@ -6,5 +6,7 @@ from . import views
 # URL config
 
 urlpatterns = [
-    path('hello/', views.say_hello)
+    path('', views.room),
+    path('test/', views.say_hello, name='room'),
+
 ]
